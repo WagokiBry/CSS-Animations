@@ -1,13 +1,15 @@
-const openButton = document.getElementById('trigger-modal');
-const closeButton = document.getElementById('close-modal');
+const dropdownContainer = document.querySelector(".dropdown-container");
+const menuTitle = document.querySelector(".menu-title");
+const dropdownMenu = document.querySelector(".dropdown-menu");
 
-function toggleModal() {
-  const modalDiv = document.querySelector('.popup-modal');
-  const backdrop = document.querySelector('.backdrop');
-  modalDiv.classList.toggle('show');
-  backdrop.classList.toggle('show');
-  modalDiv.classList.toggle('close')
-}
+menuTitle.addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    dropdownMenu.classList.toggle("visible");
+  }  
+})
 
-openButton.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
+window.addEventListener("click", (e) => {
+  if (!dropdownContainer.contains(e.target)) {
+    dropdownMenu.classList.remove("visible")
+  }
+})

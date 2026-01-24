@@ -1,66 +1,31 @@
-* {
+.dropdown-container {
+  max-width: 250px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+.menu-title {
+  background-color: rgb(163, 162, 162);
+}
+
+.dropdown-menu {
+  list-style: none;
   padding: 0;
   margin: 0;
+  background-color: rgb(99, 97, 97);
+
+  display: none;
 }
 
-body {
-  overflow: hidden;
+ul.dropdown-menu li:hover {
+  background: rgb(47, 46, 46);
 }
 
-.button-container {
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-  opacity: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-button {
-  padding: 20px;
-  color: #ffffff;
-  background-color: #0e79dd;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-}
-
-.popup-modal {
-  padding: 32px 64px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
- transform: translate(-50%, -100%);
-  pointer-events: none;
-  opacity: 0%;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, opacity 0.4s ease;
-}
-
-.popup-modal p {
-  margin-bottom: 24px;
-}
-
-.backdrop {
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  background: #000;
-  opacity: 0%;
-}
-
-.popup-modal.show {
-  opacity: 100%;
-  pointer-events: all;
-  transform: translate(-50%, -50%);
-}
-
-.backdrop.show {
-  opacity: 30%;
+.visible {
+  display: block;
 }
 
