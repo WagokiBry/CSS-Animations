@@ -42,7 +42,7 @@ ul.dropdown-menu li:hover {
   }
 
   70% {
-    transform: scaleY(1.0);
+    transform: scaleY(1.1);
   }
   
   100% {
