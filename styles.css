@@ -6,3 +6,7 @@ body {
 label{
   color: red;
 }
+
+*:focus {
+  outline: 2px solid #ff0000;
+}
