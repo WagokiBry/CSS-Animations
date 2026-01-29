@@ -1,15 +1,6 @@
 let toggler = document.querySelector(".toggle");
 
 toggler.focus()
-<<<<<<< HEAD
-=======
- let switcher = false;
-toggler.addEventListener("keydown",(e)=>{
- switcher = !switcher;
-
-  
-})
->>>>>>> refs/remotes/origin/main
 
 function toggleSwitch(e){
    if(e.key !== "Enter" && e.key !== " " && e.type !== "click"){

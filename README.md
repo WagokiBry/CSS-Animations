@@ -2,3 +2,4 @@
 #Accessibility
 #ARIA
 #responsive design
+#image responsiveness
