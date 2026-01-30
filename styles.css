@@ -20,11 +20,11 @@
 }
 
 p{
-    font-size: ;
+    font-size:12px ;
 }
 
-@media{
+@media(min-width: 480px){
    p{
-font-size: ;
+font-size: 16px;
    } 
 }
